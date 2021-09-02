@@ -30,8 +30,8 @@ namespace Dotnetman.Models
         [Display(Name ="Gender")]
         public String Gender { get; set; }
 
-        /*[Required(ErrorMessage = "Enter the Qualification")]
+        [Required(ErrorMessage = "Enter the Qualification")]
         [Display(Name = "Qualification")]
-        public String Qualification { get; set; }*/
+        public String Qualification { get; set; }
     }
 }
