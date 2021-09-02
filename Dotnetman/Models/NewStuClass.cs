@@ -33,5 +33,10 @@ namespace Dotnetman.Models
         [Required(ErrorMessage = "Enter the Qualification")]
         [Display(Name = "Qualification")]
         public String Qualification { get; set; }
+
+        [Required(ErrorMessage = "Enter the Date of Birth")]
+        [Display(Name = "DateOfBirth")]
+       // [DisplayFormat(ApplyFormatInEditMode =true, DateFormatString = "{ yyyy-MM-dd}")]
+        public DateTime? DateOfBirth { get; set; }
     }
 }

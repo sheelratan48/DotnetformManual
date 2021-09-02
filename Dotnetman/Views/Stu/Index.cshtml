@@ -30,7 +30,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.Qualification)
             </th>
-            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfBirth)
+            </th>
+            
         </tr>
     </thead>
     <tbody>
@@ -53,6 +56,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Qualification)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfBirth)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.Stuid }, new { @class = "btn btn-primary" }) |
