@@ -22,12 +22,16 @@ namespace Dotnetman.Models
 
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Enter student Age")]
-        [Display(Name = "Age")]
-        public int Age { get; set; }
-
         [Required(ErrorMessage = "Enter student Roll")]
         [Display(Name = "Roll")]
         public int Roll { get; set; }
+
+        [Required(ErrorMessage ="Enter the Gender")]
+        [Display(Name ="Gender")]
+        public String Gender { get; set; }
+
+        /*[Required(ErrorMessage = "Enter the Qualification")]
+        [Display(Name = "Qualification")]
+        public String Qualification { get; set; }*/
     }
 }

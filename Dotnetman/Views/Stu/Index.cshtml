@@ -22,10 +22,10 @@
                 @Html.DisplayNameFor(model => model.Email)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Age)
+                @Html.DisplayNameFor(model => model.Roll)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Roll)
+                @Html.DisplayNameFor(model => model.Gender)
             </th>
             <th></th>
         </tr>
@@ -43,13 +43,13 @@
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Age)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Roll)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.Stuid }, new { @class="btn btn-primary"}) |
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Stuid }, new { @class = "btn btn-primary" }) |
                 @Html.ActionLink("Details", "Details", new { id = item.Stuid }, new { @class = "btn btn-primary" }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.Stuid }, new { @class = "btn btn-primary" })
             </td>
