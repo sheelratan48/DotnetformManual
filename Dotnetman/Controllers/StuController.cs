@@ -42,7 +42,15 @@ namespace Dotnetman.Controllers
             return View(nec);
         }
 
-        
+        public async Task<ActionResult> Edit(int? id)
+        {
+            if(id==null)
+            {
+                return RedirectToAction("Index");
+            }
+            var getstudetails = await _db.StudentTable.FindAsync(id);
+            return View(getstudetails);
+        }
 
         [HttpPost]
         public async Task<IActionResult> Edit(NewStuClass nc)

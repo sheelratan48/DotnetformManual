@@ -36,7 +36,7 @@ namespace Dotnetman.Models
 
         [Required(ErrorMessage = "Enter the Date of Birth")]
         [Display(Name = "DateOfBirth")]
-       // [DisplayFormat(ApplyFormatInEditMode =true, DateFormatString = "{ yyyy-MM-dd}")]
+        [DataType(DataType.Date)]
         public DateTime? DateOfBirth { get; set; }
     }
 }
